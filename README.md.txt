@@ -1,6 +1,8 @@
 ## Structrure
 The game uses SFML's graphics library to implement textures located within the image folder. Using sprites to present the textures as well as other classes within SFML's extensive library to detect clicks and to actively refresh.
 
+The intial board is a randomly generated board with 16 rows and 25 columns with 50 mines placed throughout the field, all implemented as a result of the config file found in the boards folder
+
 The test boards used are simply read from the files found within the boards folder holding groups of 1s and 0s, 1s being a mine and 0s being an empty space. They are read by the program and size the play window as well as tell the program where and how many mines are located within the field using a simple 1 or 0. Users are able to create their own maps if they choose to by manually modifying one of these files
 
 
@@ -14,8 +16,10 @@ Also included is a Debug button used to reveal where all mines are located withi
 The Smiley face also acts as a status indicator as a regular smiley face means an active game but it will change to a frowning face with Xs for eyes if the user clicks on a mine and loses. Additionally, the smiley face will gain a pair of sunglasses if the user clears the map successfully!
 
 ## How to Use
-To use this game you must download SFML's extensions for graphics, windows, as well as system all can be downloaded from SFML's site here https://www.sfml-dev.org/
+To use this game the user must download SFML's extensions for graphics, windows, as well as system all can be downloaded from SFML's site here https://www.sfml-dev.org/
 
-You must also download the images folder as well as the boards folder as the former holds the textures nicely to run the game and the latter holds all the test boards files for loading
+The user must also download the images folder as well as the boards folder as the former holds the textures nicely to run the game and the latter holds all the test boards files for loading
+
+The user is also able to adjust the randomly generated map parameters to any size they want, adjusting the number of columns and rows as well as the number of mines within the map that are then randomly placed within the map
 
 
